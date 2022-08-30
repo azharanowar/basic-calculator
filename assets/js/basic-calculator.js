@@ -21,8 +21,27 @@ document.getElementById("resultBtn").addEventListener('click', function() {
         alert("Input value most be a number");
     } else {
         // Input fields all condition passed
-        
+
         const operation = document.querySelector(".active-btn").value;
         // Now we have operation sign, by this we can use if else condition or switch condition.
+        let result;
+        switch( operation ) {
+            case "+":
+                result = firstNumberFloatValue + lastNumberFloatValue;
+                break;
+            case "-":
+                result = firstNumberFloatValue - lastNumberFloatValue;
+                break;
+            case "*":
+                result = firstNumberFloatValue * lastNumberFloatValue;
+                break;
+            case "/":
+                result = firstNumberFloatValue / lastNumberFloatValue;
+                break;
+            case "%":
+                result = firstNumberFloatValue % lastNumberFloatValue;
+                break;
+        }
+        document.getElementById("calculatorDisplay").value = result;
     }
 });
