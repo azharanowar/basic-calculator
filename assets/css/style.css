@@ -9,33 +9,80 @@
 }
 
 #calculatorDisplay {
-    height: 40px;
+    height: 44px;
     width: 300px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 17px;
     padding: 0px 20px;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 #firstNumber {
-    height: 40px;
+    height: 43px;
     width: 300px;
-    font-size: 15px;
+    font-size: 17px;
     display: block;
     margin: 0 auto;
     padding: 0px 20px;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #lastNumber {
-    height: 40px;
+    height: 43px;
     width: 300px;
-    font-size: 15px;
+    font-size: 17px;
     display: block;
     margin: 0 auto;
     padding: 0px 20px;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.operation-btn {
+    height: 40px;
+    width: 42px;
+    font-size: 18px;
+}
+
+.operation-btn:hover {
+    background-color: rgb(224, 224, 224);
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.result-btn { 
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: crimson;
+    border: 2px solid crimson;
+    color: white;
+    border-radius: 2px;
+    margin-left: 12px;
+}
+
+.result-btn:hover {
+    background-color: rgb(197, 21, 57);
+    border: 2px solid rgb(197, 21, 57);
+    color: white;
+    border-radius: 2px;
+    cursor: pointer
+}
+
+.active-btn {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border: 2px solid rgb(56, 56, 56);
+    border-radius: 2px;
+}
+
+.active-btn:hover {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border: 2px solid rgb(56, 56, 56);
+    border-radius: 2px;
 }
